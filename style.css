@@ -1,0 +1,133 @@
+
+/* Universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.text::selection{
+    color: #dcd4d4d9;
+    background-color: #282792de;
+}
+/* navbar */
+
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .logo-container img{
+
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+
+nav ul {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #161616ed;
+    font-weight: 700;
+}
+
+a:hover{
+    font-size: large;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* Button */
+.button{
+cursor: pointer;
+width: fit-content;
+height: fit-content;
+padding: 1rem;
+color:#ffffffd9;
+background-color: #282792de;
+font-weight:bolder;
+border-radius: 0.6rem;
+}
+
+/* Button hover */
+.button:hover{
+    color: #282792de;
+    background-color: #dcd4d4d9;
+}
+/* Section Main */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+section .left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.3rem;
+    
+}
+
+.left-section h1{
+text-transform: capitalize;
+font-size: 3rem;
+font-weight: 700;
+}
+
+
+.left-section h1 span{
+    color: #282792de;
+}
+
+.text{
+    font-size: 1.4 rem;
+    font-weight: 300;
+    color: #b4a9a9
+    
+}
+
+
+/* Right section */
+
+.right-section img{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+}
+
+footer{
+background-color: #282792de;
+display: flex;
+justify-content: center;
+color: #ffffffd9;
+}
